@@ -24,6 +24,7 @@ public class CollectionTestSuite {
         oddNumbersExterminator = new OddNumbersExterminator();
         System.out.println("Test Case: begin " + testName.getMethodName());
     }
+
     @After
     public void after(){
         System.out.println("Test Case: end " + testName.getMethodName());
@@ -31,18 +32,23 @@ public class CollectionTestSuite {
 
     @Test
     public void testOddNumbersExterminatorEmptyList(){
+        // Given
         list = new ArrayList<>();
+        // When
         List<Integer> result = oddNumbersExterminator.exterminate(list);
+        // Then
         assertEquals(0, result.size());
-
     }
     @Test
     public void testOddNumbersExterminatorNormalList() {
+        // Given
         list = new ArrayList<>();
         for(int i = 1; i <= 10; i++){
             list.add(i);
         }
+        // When
         List<Integer> result = oddNumbersExterminator.exterminate(list);
+        // Then
         assertArrayEquals(new Integer[] { 2, 4, 6, 8, 10 }, result.toArray());
     }
 }
