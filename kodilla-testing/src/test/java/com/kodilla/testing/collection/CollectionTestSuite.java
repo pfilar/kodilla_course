@@ -18,7 +18,6 @@ public class CollectionTestSuite {
         testName = new TestName();
     }
 
-
     @Before
     public void before(){
         oddNumbersExterminator = new OddNumbersExterminator();
