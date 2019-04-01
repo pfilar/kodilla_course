@@ -8,19 +8,19 @@ public class ShapeCollector {
     private List<Shape> shapes = new ArrayList<>();  // przechowuje obiekty implementujące interface Shape  / new ArrayList<Shape>()
 
     public void addFigure(Shape shape) {
-
+        shapes.add(shape);
     }
 
     public void removeFigure(Shape shape) {
-
+        shapes.remove(shape);
     }
 
-    public void getFigure(int n) {
-
+    public Shape getFigure(int n) {
+        return shapes.get(n);
     }
 
     public void showFigures(){
-
+        System.out.println(shapes);
     }
 
     public int size() {

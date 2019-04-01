@@ -1,16 +1,11 @@
 package com.kodilla.testing.shape;
 import org.junit.*;
-import java.util.*;
 import static org.junit.Assert.*;   // import statyczny całej klasy
-import com.kodilla.testing.shape.ShapeCollector;
 
 
 public class ShapeCollectorTestSuite {
 
     private ShapeCollector shapeCollector;   // = new ShapeCollector();  / testy wpływały by na siebie nie można tak
-
-
-    // rzutowanie obiektów czy to jest potrzebne  dla interfejs Shape
 
     public static int testCounter = 0;
 
