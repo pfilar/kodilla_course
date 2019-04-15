@@ -42,6 +42,13 @@ public class StreamMain {
 //        poemBeautifier.beautify("thirdWord", (word) -> "DEF " + word + " ABC");
 //        poemBeautifier.beautify("fourthWord", (word) -> word.toUpperCase() + "*");
 //        poemBeautifier.beautify("fifthWord", (word) -> word + "ABC");
+
+
+
+
+
+
+
     }
 }
 

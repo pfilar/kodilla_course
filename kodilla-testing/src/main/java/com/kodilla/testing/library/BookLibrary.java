@@ -32,9 +32,7 @@ public class BookLibrary {
     // gdy ma wypożyczoną jedną książkę,
     // gdy ma wypożyczonych 5 książek
 
-//    public List<Book> listBooksInHandsOf(LibraryUser libraryUser){
-//
-//    }
-
-
+    public List<Book> listBooksInHandsOf(LibraryUser libraryUser){
+        return libraryDatabase.listBooksInHandsOf(libraryUser);
+    }
 }

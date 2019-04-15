@@ -1,5 +1,6 @@
 package com.kodilla.testing.library;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.*;
@@ -42,8 +43,6 @@ public class BookDirectoryTestSuite {
 
         // Then
         assertEquals(4, theListOfBooks.size());
-
-        //  assertTrue(false);  - implementacja przed testem ?
     }
 
     @Test
@@ -62,8 +61,8 @@ public class BookDirectoryTestSuite {
         List<Book> theListOfBooks0 = bookLibrary.listBooksWithCondition("ZeroBooks");
         List<Book> theListOfBooks15 = bookLibrary.listBooksWithCondition("Any title");
         List<Book> theListOfBooks40 = bookLibrary.listBooksWithCondition("FortyBooks");
-        // Then
 
+        // Then
         assertEquals(0, theListOfBooks0.size());
         assertEquals(15, theListOfBooks15.size());
         assertEquals(0, theListOfBooks40.size());
@@ -88,25 +87,41 @@ public class BookDirectoryTestSuite {
 
     @Test
     public void listBooksInHandsOfZeroBooks() {
-
+        //Given
         LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        when(libraryDatabaseMock.listBooksInHandsOf(any())).thenReturn(generateListOfNBooks(0));
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
+        //When
+        List<Book> result = bookLibrary.listBooksInHandsOf(
+                new LibraryUser("user1", "Jacek", "11111"));
+
+        //Then
+        Assert.assertEquals(0, result.size());
     }
 
     @Test
     public void listBooksInHandsOfOneBooks() {
-
+        //Given
         LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        when(libraryDatabaseMock.listBooksInHandsOf(any())).thenReturn(generateListOfNBooks(1));
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
+        //When
+        List<Book> result = bookLibrary.listBooksInHandsOf(
+                new LibraryUser("user1", "Jacek", "11111"));
+        //Then
+        Assert.assertEquals(1, result.size());
     }
 
     @Test
     public void listBooksInHandsOfFiveBooks() {
 
         LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        when(libraryDatabaseMock.listBooksInHandsOf(any())).thenReturn(generateListOfNBooks(5));
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
+        //When
+        List<Book> result = bookLibrary.listBooksInHandsOf(
+                new LibraryUser("user1", "Jacek", "11111"));
+        //Then
+        Assert.assertEquals(5, result.size());
     }
-
-
-
 }
