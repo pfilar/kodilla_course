@@ -1,4 +1,5 @@
 package com.kodilla.stream;
+import com.kodilla.stream.beautifier.PoemBeautifier;
 import com.kodilla.stream.book.BookDirectory;
 import com.kodilla.stream.book.Book;
 import com.kodilla.stream.forumuser.Forum;
@@ -34,14 +35,14 @@ public class StreamMain {
 
 
 
-//        System.out.println();
-//        System.out.println("Unit 7 Task 1");
-//        PoemBeautifier poemBeautifier = new PoemBeautifier();
-//        poemBeautifier.beautify("firstWord", (word) -> word + "ABC");
-//        poemBeautifier.beautify("secondWord", (word) -> word.toUpperCase());      // metody Stringa:   https://stormit.pl/string-metody/
-//        poemBeautifier.beautify("thirdWord", (word) -> "DEF " + word + " ABC");
-//        poemBeautifier.beautify("fourthWord", (word) -> word.toUpperCase() + "*");
-//        poemBeautifier.beautify("fifthWord", (word) -> word + "ABC");
+        System.out.println();
+        System.out.println("Unit 7 Task 1");
+        PoemBeautifier poemBeautifier = new PoemBeautifier();
+        poemBeautifier.beautify("firstWord", (text) -> text + "ABC");
+        poemBeautifier.beautify("secondWord", (text) -> text.toUpperCase());      // metody Stringa:   https://stormit.pl/string-metody/
+        poemBeautifier.beautify("thirdWord", (text) -> "DEF " + text + " ABC");
+        poemBeautifier.beautify("fourthWord", (text) -> text.toUpperCase() + "*");
+        poemBeautifier.beautify("fifthWord", (text) -> text + "ABC");
 
 
 

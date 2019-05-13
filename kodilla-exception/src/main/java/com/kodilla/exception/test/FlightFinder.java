@@ -1,5 +1,6 @@
 package com.kodilla.exception.test;
 
+import java.security.Key;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,19 +23,19 @@ public class FlightFinder {
 
     public static void main(String[] args) {
         Flight flight1 = new Flight("Warszawa", "Paryż");
-        Flight flight2 = new Flight("Berlin", "Londyn");
+        //Flight flight2 = new Flight("Berlin", "Londyn");
         FlightFinder flightFinder = new FlightFinder();
         try {
             flightFinder.findFilght(flight1);
 
         } catch (RouteNotFoundException e) {
-            e.printStackTrace();
+            System.out.println(e);//  e.printStackTrace();
         }
 
-        try {
-            flightFinder.findFilght(flight2);
-        } catch (RouteNotFoundException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            flightFinder.findFilght(flight2);
+//        } catch (RouteNotFoundException e) {
+//            System.out.println(e);// e.printStackTrace();
+//        }
     }
 }

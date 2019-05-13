@@ -23,7 +23,7 @@ public class FirstChallenge {
             System.out.println(result);
 
         } catch(ArithmeticException e) {
-            e.printStackTrace();
+            System.out.println(e);//e.printStackTrace();
         }
     }
 }

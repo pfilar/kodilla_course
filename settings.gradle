@@ -8,4 +8,8 @@ include 'kodilla-testing'
 include 'kodilla-stream'
 include 'kodilla-rps'
 include 'kodilla-exception'
+include 'kodilla-tic_tac_toe'
+include 'kodilla-game'
+include 'kodilla-good-patterns'
+include 'kodilla-first-project'
 
