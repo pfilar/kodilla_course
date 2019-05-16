@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="199.0" y="232.0">com.kodilla.good.patterns.challenges.allegro.Order</node>
+    <node x="0.0" y="380.0">com.kodilla.good.patterns.challenges.allegro.OrderProcessor</node>
+    <node x="0.0" y="454.0">com.kodilla.good.patterns.challenges.allegro.Application</node>
+    <node x="301.0" y="454.0">com.kodilla.good.patterns.challenges.allegro.User</node>
+    <node x="174.0" y="380.0">com.kodilla.good.patterns.challenges.allegro.ProductOrder</node>
+    <node x="154.0" y="454.0">com.kodilla.good.patterns.challenges.allegro.OrderDTO</node>
+    <node x="0.0" y="0.0">com.kodilla.good.patterns.challenges.allegro.ProductOrderRepository</node>
+    <node x="20.0" y="232.0">com.kodilla.good.patterns.challenges.allegro.MailService</node>
+    <node x="193.0" y="153.0">com.kodilla.good.patterns.challenges.allegro.Product</node>
+    <node x="242.0" y="79.0">com.kodilla.good.patterns.challenges.allegro.OrderService</node>
+    <node x="0.0" y="153.0">com.kodilla.good.patterns.challenges.allegro.InformationService</node>
+    <node x="0.0" y="306.0">com.kodilla.good.patterns.challenges.allegro.ProductOrderRequestRetriever</node>
+    <node x="221.0" y="0.0">com.kodilla.good.patterns.challenges.allegro.ProductOrderService</node>
+    <node x="21.0" y="79.0">com.kodilla.good.patterns.challenges.allegro.OrderRepository</node>
+    <node x="339.0" y="380.0">com.kodilla.game</node>
+    <node x="253.0" y="306.0">com.kodilla.good.patterns.challenges.allegro.ProductOrderRequest</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.kodilla.good.patterns.challenges.allegro.MailService" target="com.kodilla.good.patterns.challenges.allegro.InformationService">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.kodilla.good.patterns.challenges.allegro.Order" target="com.kodilla.good.patterns.challenges.allegro.Product">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.kodilla.good.patterns.challenges.allegro.OrderService" target="com.kodilla.good.patterns.challenges.allegro.ProductOrderService">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.kodilla.good.patterns.challenges.allegro.OrderRepository" target="com.kodilla.good.patterns.challenges.allegro.ProductOrderRepository">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <SelectedNodes>
+    <node>com.kodilla.game</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
