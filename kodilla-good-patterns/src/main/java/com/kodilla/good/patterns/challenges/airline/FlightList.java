@@ -4,32 +4,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlightList {
-    private List<DirectFlights> listOfDirectFlights = new ArrayList<>();
-    private List<ConnectingFlights> listOfConnectingFlights = new ArrayList<>();
+    private List<DirectFlight> listOfDirectFlights = new ArrayList<>();
+    private List<ConnectingFlight> listOfConnectingFlights = new ArrayList<>();
 
     public FlightList() {
-        listOfDirectFlights.add(new DirectFlights("Bydgoszcz", "Gdańsk"));
-        listOfDirectFlights.add(new DirectFlights("Warszawa", "Szczecin"));
-        listOfDirectFlights.add(new DirectFlights("Bydgoszcz", "Katowice"));
-        listOfDirectFlights.add(new DirectFlights("Katowice", "Gdańsk"));
-        listOfDirectFlights.add(new DirectFlights("Bydgoszcz", "Warszawa"));
-        listOfDirectFlights.add(new DirectFlights("Gdańsk", "Zielona Góra"));
-        listOfDirectFlights.add(new DirectFlights("Katowice", "Łódź"));
-        listOfDirectFlights.add(new DirectFlights("Szczecin", "Warszawa"));
-        listOfDirectFlights.add(new DirectFlights("Szczecin", "Poznań"));
+        listOfDirectFlights.add(new DirectFlight("Bydgoszcz", "Gdańsk"));
+        listOfDirectFlights.add(new DirectFlight("Warszawa", "Szczecin"));
+        listOfDirectFlights.add(new DirectFlight("Bydgoszcz", "Katowice"));
+        listOfDirectFlights.add(new DirectFlight("Katowice", "Gdańsk"));
+        listOfDirectFlights.add(new DirectFlight("Bydgoszcz", "Warszawa"));
+        listOfDirectFlights.add(new DirectFlight("Gdańsk", "Zielona Góra"));
+        listOfDirectFlights.add(new DirectFlight("Katowice", "Łódź"));
+        listOfDirectFlights.add(new DirectFlight("Szczecin", "Warszawa"));
+        listOfDirectFlights.add(new DirectFlight("Szczecin", "Poznań"));
 
-        listOfConnectingFlights.add(new ConnectingFlights("Gdańsk", "Warszawa", "Katowice"));
-        listOfConnectingFlights.add(new ConnectingFlights("Katowice", "Poznać", "Szczecin"));
-        listOfConnectingFlights.add(new ConnectingFlights("Kraków", "Rzeszów", "Gdańsk"));
-        listOfConnectingFlights.add(new ConnectingFlights("Łódź", "Warszawa", "Kraków"));
-        listOfConnectingFlights.add(new ConnectingFlights("Szczecin", "Modlin", "Katowice"));
+        listOfConnectingFlights.add(new ConnectingFlight("Gdańsk", "Warszawa", "Katowice"));
+        listOfConnectingFlights.add(new ConnectingFlight("Katowice", "Poznać", "Szczecin"));
+        listOfConnectingFlights.add(new ConnectingFlight("Kraków", "Rzeszów", "Gdańsk"));
+        listOfConnectingFlights.add(new ConnectingFlight("Łódź", "Warszawa", "Kraków"));
+        listOfConnectingFlights.add(new ConnectingFlight("Szczecin", "Modlin", "Katowice"));
     }
 
-    public List<DirectFlights> getListOfDirectFlights() {
+    public List<DirectFlight> getListOfDirectFlights() {
         return new ArrayList<>(listOfDirectFlights);
     }
 
-    public List<ConnectingFlights> getListOfConnectingFlights() {
+    public List<ConnectingFlight> getListOfConnectingFlights() {
         return new ArrayList<>(listOfConnectingFlights);
     }
 }

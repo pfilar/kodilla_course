@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 public class FlightSerwis {
     FlightList flightList = new FlightList();
     
-    public List<DirectFlights> findDepartureAirport(String departureAirportDF) {
-        List<DirectFlights> resultOfSearchDepartureAirport = flightList.getListOfDirectFlights().stream()
+    public List<DirectFlight> findDepartureAirport(String departureAirportDF) {
+        List<DirectFlight> resultOfSearchDepartureAirport = flightList.getListOfDirectFlights().stream()
                 .filter(n -> n.getDepartureAirportDF().equals(departureAirportDF))
                 .collect(Collectors.toList());
 
@@ -21,8 +21,8 @@ public class FlightSerwis {
         return resultOfSearchDepartureAirport;
     }
     
-    public List<DirectFlights> findArrivalAirport (String arrivalAirportDT) {
-        List<DirectFlights> resultOfSearchArrivalAirport = flightList.getListOfDirectFlights().stream()
+    public List<DirectFlight> findArrivalAirport (String arrivalAirportDT) {
+        List<DirectFlight> resultOfSearchArrivalAirport = flightList.getListOfDirectFlights().stream()
                 .filter(n -> n.getArrivalAirportDF().equals(arrivalAirportDT))
                 .collect(Collectors.toList());
 
@@ -36,8 +36,8 @@ public class FlightSerwis {
         return resultOfSearchArrivalAirport;
     }
 
-    public List<ConnectingFlights> findStopoverAirport (String stopoverAirport) {
-        List<ConnectingFlights> resultOfSearchStopoverAirport = flightList.getListOfConnectingFlights().stream()
+    public List<ConnectingFlight> findStopoverAirport (String stopoverAirport) {
+        List<ConnectingFlight> resultOfSearchStopoverAirport = flightList.getListOfConnectingFlights().stream()
                 .filter(n -> n.getStopoverAirportCF().equals(stopoverAirport))
                 .collect(Collectors.toList());
 
@@ -50,11 +50,4 @@ public class FlightSerwis {
 
         return resultOfSearchStopoverAirport;
     }
-
-
-
-
-
-
-
 }
