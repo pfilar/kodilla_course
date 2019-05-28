@@ -1,5 +1,10 @@
 package com.kodilla.stream.book;
 
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.util.List;
+
 public class BookTestSuite {
     @Test
     public void testGetListUsingFor() {

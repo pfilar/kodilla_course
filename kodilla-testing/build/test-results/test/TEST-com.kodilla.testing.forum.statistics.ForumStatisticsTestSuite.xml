@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" tests="7" skipped="0" failures="0"
+           errors="0" timestamp="2019-05-22T20:48:17" hostname="DESKTOP-6DHFJAR" time="0.107">
+    <properties/>
+    <testcase name="testCalculateAdvStatisticsWithMockPosts0"
+              classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.104"/>
+    <testcase name="testCalculateAdvStatisticsWithMockUsers0"
+              classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.001"/>
+    <testcase name="testCalculateAdvStatisticsWithMockLessCommentsThenPosts"
+              classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
+    <testcase name="testCalculateAdvStatisticsWithMockPosts1000"
+              classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
+    <testcase name="testCalculateAdvStatisticsWithMockUsers100"
+              classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
+    <testcase name="testCalculateAdvStatisticsWithMockComments0"
+              classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.001"/>
+    <testcase name="testCalculateAdvStatisticsWithMockMoreCommentsThenPosts"
+              classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
+    <system-out><![CDATA[]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+</testsuite>
