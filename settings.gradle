@@ -3,6 +3,16 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-rootProject.name = 'kodila-spring-web'
-include 'kodilla-patterns'
 
+rootProject.name = 'kodila-course'
+include 'kodilla-exception'
+include 'kodilla-first-project'
+include 'kodilla-game'
+include 'kodilla-good-patterns'
+include 'kodilla-patterns'
+include 'kodilla-rps'
+include 'kodilla-spring'
+include 'kodilla-spring-intro'
+include 'kodilla-spring-web'
+include 'kodilla-stream'
+include 'kodilla-testing'
