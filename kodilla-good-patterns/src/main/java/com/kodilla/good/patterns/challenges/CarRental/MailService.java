@@ -1,6 +1,6 @@
 package com.kodilla.good.patterns.challenges.CarRental;
 
-public class MailService implements InformationService{
+public class MailService implements InformationService {
 
     @Override
     public void inform(UserOfRental userOfRental) {

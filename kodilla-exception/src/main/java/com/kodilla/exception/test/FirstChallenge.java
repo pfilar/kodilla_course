@@ -3,7 +3,7 @@ package com.kodilla.exception.test;
 public class FirstChallenge {
 
     public double divide(double a, double b) throws ArithmeticException {   // informacja o wyjątku zgłaszanym przez metodę
-        if(b == 0){
+        if (b == 0) {
             throw new ArithmeticException();    // crlt + B  albo ctrl + l myszy  / ablo sprawdzenie ctrl + h
         }
         return a / b;
@@ -11,6 +11,7 @@ public class FirstChallenge {
 
     /**
      * This main can throw an ArithmeticException!!!
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -22,7 +23,7 @@ public class FirstChallenge {
 
             System.out.println(result);
 
-        } catch(ArithmeticException e) {
+        } catch (ArithmeticException e) {
             System.out.println(e);//e.printStackTrace();
         }
     }

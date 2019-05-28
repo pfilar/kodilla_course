@@ -17,12 +17,15 @@ public final class Book {
     public String getAuthor() {
         return author;
     }
+
     public String getTitle() {
         return title;
     }
+
     public int getYearOfPublication() {
         return yearOfPublication;
     }
+
     public String getSignature() {
         return signature;
     }

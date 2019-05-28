@@ -1,4 +1,5 @@
 package com.kodilla.testing.forum.tdd;
+
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -68,7 +69,8 @@ public class ForumTestSuite {
         Assert.assertEquals(thePost, retrievedPost);
     }
 
-    @Test  // 4. sprawdzający, czy komentarz pobrany z klasy ForumUser jest taki sam, jak komentarz, który był wstawiany do klasy.
+    @Test
+    // 4. sprawdzający, czy komentarz pobrany z klasy ForumUser jest taki sam, jak komentarz, który był wstawiany do klasy.
     public void testGetComment() {
         //Given
         ForumUser forumUser = new ForumUser("mrsmith", "John Smith");

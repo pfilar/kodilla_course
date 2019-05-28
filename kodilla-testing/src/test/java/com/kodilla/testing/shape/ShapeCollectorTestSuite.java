@@ -1,5 +1,7 @@
 package com.kodilla.testing.shape;
+
 import org.junit.*;
+
 import static org.junit.Assert.*;   // import statyczny całej klasy
 
 
@@ -22,12 +24,12 @@ public class ShapeCollectorTestSuite {
     @Before                             // wyświetlenie nr testu przed każdym testem
     public void beforeEachTest() {
         shapeCollector = new ShapeCollector(); // po inicjalizacji tutaj m świeżą kopię, każdy test jest niezależny od siebie
-        testCounter ++;
+        testCounter++;
         System.out.println("Execute Test number: " + testCounter);
     }
 
     @Test
-    public void testAddFigure(){
+    public void testAddFigure() {
         // shapeCollector = new ShapeCollector();   / mamy to z metody beforeEachTest()  // ShapeCollector shapeCollector = new ShapeCollector(); - źle przysłania
         shapeCollector.addFigure(new Circle(4));
         shapeCollector.addFigure(new Square(5));
@@ -40,7 +42,7 @@ public class ShapeCollectorTestSuite {
     public void testRemoveFigure() {
         Shape figure1 = new Circle(4);
         Shape figure2 = new Square(5);
-        Shape figure3 = new Triangle(3,5);
+        Shape figure3 = new Triangle(3, 5);
 
         shapeCollector.addFigure(figure1);   // nie można użyć tworzenia w "locie", lepiej stworzyć referencje (wcześniejsze linie kodu)
         shapeCollector.addFigure(figure2);

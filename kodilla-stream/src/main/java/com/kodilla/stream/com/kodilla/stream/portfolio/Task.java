@@ -23,18 +23,23 @@ public final class Task {
     public String getTitle() {
         return title;
     }
+
     public String getDescription() {
         return description;
     }
+
     public User getAssignedUser() {
         return assignedUser;
     }
+
     public User getCreator() {
         return creator;
     }
+
     public LocalDate getCreated() {
         return created;
     }
+
     public LocalDate getDeadline() {
         return deadline;
     }

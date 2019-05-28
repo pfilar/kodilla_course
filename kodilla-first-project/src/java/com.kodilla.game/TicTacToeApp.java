@@ -86,7 +86,7 @@ public class TicTacToeApp extends Application {
                         computerMove();
                     }
                     Winner winner = game.isWinner();
-                    if (winner != Winner.NONE){
+                    if (winner != Winner.NONE) {
                         System.out.println(winner);
                         // wyświetlenie komunikatu zwycięzca  / może być zerowanie planszy / przejscie do nowej rozgrywki (null do wszystkich pol)
                         Alert alert = new Alert(Alert.AlertType.CONFIRMATION, winner + " Won! Press Yes if you want play again and No if you want to exit", ButtonType.YES, ButtonType.NO);     // klasa Alert / typ CONFIRMATION można dać iny

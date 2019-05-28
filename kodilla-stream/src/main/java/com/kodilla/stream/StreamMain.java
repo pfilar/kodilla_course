@@ -1,4 +1,5 @@
 package com.kodilla.stream;
+
 import com.kodilla.stream.beautifier.PoemBeautifier;
 import com.kodilla.stream.book.BookDirectory;
 import com.kodilla.stream.book.Book;
@@ -13,6 +14,7 @@ import com.kodilla.stream.reference.FunctionalCalculator;
 import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
+
 import static java.time.temporal.ChronoUnit.DAYS;  // do klasy DAYS
 
 public class StreamMain {
@@ -34,7 +36,6 @@ public class StreamMain {
                 .forEach(System.out::println);
 
 
-
         System.out.println();
         System.out.println("Unit 7 Task 1");
         PoemBeautifier poemBeautifier = new PoemBeautifier();
@@ -43,11 +44,6 @@ public class StreamMain {
         poemBeautifier.beautify("thirdWord", (text) -> "DEF " + text + " ABC");
         poemBeautifier.beautify("fourthWord", (text) -> text.toUpperCase() + "*");
         poemBeautifier.beautify("fifthWord", (text) -> text + "ABC");
-
-
-
-
-
 
 
     }

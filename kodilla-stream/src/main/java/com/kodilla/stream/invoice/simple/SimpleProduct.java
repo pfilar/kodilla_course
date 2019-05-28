@@ -12,6 +12,7 @@ public final class SimpleProduct {
     public String getProductName() {
         return productName;
     }
+
     public double getProductPrice() {
         return productPrice;
     }

@@ -1,4 +1,5 @@
 package com.kodilla.stream.iterate;
+
 import java.util.stream.Stream;
 
 public final class NumbersGenerator {
@@ -8,7 +9,6 @@ public final class NumbersGenerator {
                 .filter(n -> n % 2 == 0)
                 .forEach(System.out::println);
     }
-
 
 
 }

@@ -25,9 +25,9 @@ public class SpringRunnerTestSuite {
     public void testCircleLoadedIntoContainer() {
         //Given
         ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.kodilla.com.kodilla.spring");
+                new AnnotationConfigApplicationContext("com.kodilla.spring");
         //Shape shape = context.getBean(Circle.class);
-        Shape shape = (Shape)context.getBean("circle");
+        Shape shape = (Shape) context.getBean("circle");
         //When
         String name = shape.getShapeName();
         //Then
@@ -38,9 +38,9 @@ public class SpringRunnerTestSuite {
     public void testTriangleLoadedIntoContainer() {
         //Given
         ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.kodilla.com.kodilla.spring");
+                new AnnotationConfigApplicationContext("com.kodilla.spring");
         //Shape shape = context.getBean(Triangle.class);
-        Shape shape = (Shape)context.getBean("triangle");
+        Shape shape = (Shape) context.getBean("triangle");
         //When
         String name = shape.getShapeName();
         //Then
@@ -48,11 +48,11 @@ public class SpringRunnerTestSuite {
     }
 
     @Test
-    public void testSquareLoadedIntoContainer(){
+    public void testSquareLoadedIntoContainer() {
         //Given
-        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.com.kodilla.spring");
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         //Shape shape = context.getBean(Square.class);
-        Shape shape = (Shape)context.getBean("createSquare");
+        Shape shape = (Shape) context.getBean("createSquare");
         //When
         String name = shape.getShapeName();
         //Then
@@ -62,8 +62,8 @@ public class SpringRunnerTestSuite {
     @Test
     public void testShapeLoadedIntoContainer() {
         //Given
-        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.com.kodilla.spring");
-        Shape shape = (Shape)context.getBean("chosenShape");
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
+        Shape shape = (Shape) context.getBean("chosenShape");
         //When
         String name = shape.getShapeName();
         //Then

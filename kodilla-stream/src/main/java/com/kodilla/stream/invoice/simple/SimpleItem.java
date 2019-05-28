@@ -12,6 +12,7 @@ public final class SimpleItem {
     public SimpleProduct getProduct() {
         return product;
     }
+
     public double getQuantity() {
         return quantity;
     }

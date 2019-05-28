@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 public class WorldTest {
 
     @Test
-    public void testGetPeopleQuantity(){
+    public void testGetPeopleQuantity() {
         //Given
         Continent europe = new Continent("Europe");
         europe.getCountries().add(new Country("Poland", new BigDecimal("38000000")));

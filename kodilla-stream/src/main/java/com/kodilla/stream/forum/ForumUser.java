@@ -42,12 +42,15 @@ public final class ForumUser {
     public String getUsername() {
         return username;
     }
+
     public String getRealName() {
         return realName;
     }
+
     public String getLocation() {
         return location;
     }
+
     public Set<ForumUser> getFriends() {
         return friends;
     }

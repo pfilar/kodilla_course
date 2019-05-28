@@ -17,7 +17,7 @@ public class LibraryTestSuite {
     public void testLoadFromDb() {
         //Given
         ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.kodilla.com.kodilla.spring");
+                new AnnotationConfigApplicationContext("com.kodilla.spring");
         Library library = context.getBean(Library.class);
         //When
         library.loadFromDb();
@@ -29,7 +29,7 @@ public class LibraryTestSuite {
     public void testSaveToDb() {
         //Given
         ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.kodilla.com.kodilla.spring");
+                new AnnotationConfigApplicationContext("com.kodilla.spring");
         Library library = context.getBean(Library.class);
         //When
         library.saveToDb();
@@ -41,7 +41,7 @@ public class LibraryTestSuite {
     public void testContext() {
         //Given
         ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.kodilla.com.kodilla.spring");
+                new AnnotationConfigApplicationContext("com.kodilla.spring");
 
         //When & Then
         System.out.println("===== Beans list: ==== >>");

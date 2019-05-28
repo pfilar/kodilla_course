@@ -9,12 +9,12 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 public class FileReader {
-    public void readFile() throws FileReaderException{
+    public void readFile() throws FileReaderException {
         ClassLoader classLoader = getClass().getClassLoader();  // klasa odpowiedzialna za odnalezienie klas i plików wewnątrz naszej aplikacji
         File file = new File(classLoader.getResource("file/names.txt").getFile());  // wywołanie metody, która wskazuje klasie ClassLoader, gdzie powinna szukać pliku
         //Path path = Paths.get(file.getPath());   // zapisane do kodu poniżej
 
-        try (Stream<String> fileLines = Files.lines(Paths.get(file.getPath()))){
+        try (Stream<String> fileLines = Files.lines(Paths.get(file.getPath()))) {
 
             fileLines.forEach(System.out::println);
 

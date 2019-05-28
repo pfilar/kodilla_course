@@ -9,7 +9,7 @@ public class TicTacToe {        // gra oparta na współżędnych / plansza zbud
     public static void main(String[] args) {
         int boardSize = 3;
         char currentSymbol = 'X';
-        char [][] board = new char [boardSize][boardSize];
+        char[][] board = new char[boardSize][boardSize];
 
         while (true) {
             boolean rightMove = makeMove(board, boardSize, currentSymbol);
@@ -19,34 +19,34 @@ public class TicTacToe {        // gra oparta na współżędnych / plansza zbud
                 boolean winCrossOne = checkCrossOne(board, currentSymbol);
                 boolean winCrossTwo = checkCrossTwo(board, currentSymbol);
 
-                if(winVerses || winColumns || winCrossOne || winCrossTwo) {
+                if (winVerses || winColumns || winCrossOne || winCrossTwo) {
                     printBoard(board, boardSize);
                     System.out.println("you win: " + currentSymbol);
                     break;
                 }
 
-                currentSymbol  = currentSymbol == 'X' ? 'O' : 'X';      // operator ternarny
+                currentSymbol = currentSymbol == 'X' ? 'O' : 'X';      // operator ternarny
             }
         }
     }
 
-    public static void printBoard(char [][] board, int boardSize){      // metoda odpowiedzialna za drukowanie planszy
+    public static void printBoard(char[][] board, int boardSize) {      // metoda odpowiedzialna za drukowanie planszy
 
-        for(int i = 0; i < boardSize; i++) {        //  drukowanie nagłówków kolumn  albo System.out.println("\t0 \t1 \t2");
+        for (int i = 0; i < boardSize; i++) {        //  drukowanie nagłówków kolumn  albo System.out.println("\t0 \t1 \t2");
             System.out.print("\t" + i);
         }
         System.out.println();
 
-        for(int verse = 0; verse < board.length; verse++){              // drukowanie zawartości planszy
+        for (int verse = 0; verse < board.length; verse++) {              // drukowanie zawartości planszy
             System.out.print(verse + ": \t");
-            for(int column = 0; column < board[verse].length; column++){
+            for (int column = 0; column < board[verse].length; column++) {
                 System.out.print(board[verse][column] + "\t");
             }
             System.out.println();
         }
     }
 
-    public static boolean makeMove(char [] [] board, int boardSize, char currentSymbol) {
+    public static boolean makeMove(char[][] board, int boardSize, char currentSymbol) {
         printBoard(board, boardSize);                           // wydruk planszy
 
         int row = 0;
@@ -75,49 +75,49 @@ public class TicTacToe {        // gra oparta na współżędnych / plansza zbud
         return true;
     }
 
-    public static boolean checkVerses(char [] [] board, char currentSymbol) {
+    public static boolean checkVerses(char[][] board, char currentSymbol) {
         for (int verse = 0; verse < board.length; verse++) {
             boolean win = true;
             for (int column = 0; column < board[verse].length; column++) {
-                if(board[verse][column]!=currentSymbol) {
+                if (board[verse][column] != currentSymbol) {
                     win = false;
                     break;
                 }
             }
-            if(win) {
+            if (win) {
                 return true;
             }
         }
         return false;
     }
 
-    public static boolean checkColumns(char [] [] board, char currentSymbol) {
+    public static boolean checkColumns(char[][] board, char currentSymbol) {
         for (int column = 0; column < board.length; column++) {
             boolean win = true;
             for (int verse = 0; verse < board.length; verse++) {
-                if(board[verse][column]!=currentSymbol) {
+                if (board[verse][column] != currentSymbol) {
                     win = false;
                     break;
                 }
             }
-            if(win) {
+            if (win) {
                 return true;
             }
         }
         return false;
     }
 
-    public static boolean checkCrossOne(char [] [] board, char currentSymbol){
-        for (int i = 0; i < board.length; i++){
-            if(board[i][i] != currentSymbol) {
+    public static boolean checkCrossOne(char[][] board, char currentSymbol) {
+        for (int i = 0; i < board.length; i++) {
+            if (board[i][i] != currentSymbol) {
                 return false;
             }
         }
         return true;
     }
 
-    public static boolean checkCrossTwo(char [] [] board, char currentSymbol){
-        for (int i = 0; i <+ 2; i++) {
+    public static boolean checkCrossTwo(char[][] board, char currentSymbol) {
+        for (int i = 0; i < +2; i++) {
             for (int j = 2; j >= 0; j--) {
                 if (board[i][j] != currentSymbol) {
                     return false;

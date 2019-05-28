@@ -9,6 +9,7 @@ public final class Forum {
     // udostępniać metodę getUserList(), która będzie zwracała kolekcję z użytkownika forum
 
     private final List<ForumUser> theForumUsersList = new ArrayList<>();
+
     public Forum() {
         theForumUsersList.add(new ForumUser(1, "Jan", 'M', 1991, 8, 17, 89));
         theForumUsersList.add(new ForumUser(2, "Andrzej", 'M', 2000, 1, 9, 100));

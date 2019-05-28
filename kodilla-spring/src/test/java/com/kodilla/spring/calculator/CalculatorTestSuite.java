@@ -23,7 +23,7 @@ public class CalculatorTestSuite {
         double resultOfAdd = calculator.add(8, 2);
         double resultOfSub = calculator.sub(8, 2);
         double resultOfMul = calculator.mul(8, 2);
-        double resultOfDiv = calculator.div(8,2);
+        double resultOfDiv = calculator.div(8, 2);
 
         //Then
         Assert.assertEquals(10, resultOfAdd, 0.01);

@@ -7,7 +7,7 @@ public class BookLibrary {
 
     LibraryDatabase libraryDatabase;
 
-    public BookLibrary (LibraryDatabase libraryDatabase) {
+    public BookLibrary(LibraryDatabase libraryDatabase) {
         this.libraryDatabase = libraryDatabase;
     }
 
@@ -18,7 +18,7 @@ public class BookLibrary {
         if (resultList.size() > 20) return bookList;
         bookList = resultList;
 
-       //Book book = new Book("The book title", "The book author", 2000);  // dlaczego tworzenie nowego obiektu
+        //Book book = new Book("The book title", "The book author", 2000);  // dlaczego tworzenie nowego obiektu
         //bookList.add(book);
 
         // temporary returning list of one book
@@ -32,7 +32,7 @@ public class BookLibrary {
     // gdy ma wypożyczoną jedną książkę,
     // gdy ma wypożyczonych 5 książek
 
-    public List<Book> listBooksInHandsOf(LibraryUser libraryUser){
+    public List<Book> listBooksInHandsOf(LibraryUser libraryUser) {
         return libraryDatabase.listBooksInHandsOf(libraryUser);
     }
 }

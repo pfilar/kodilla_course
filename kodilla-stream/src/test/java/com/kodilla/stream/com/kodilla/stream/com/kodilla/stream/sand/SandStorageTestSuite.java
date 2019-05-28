@@ -21,7 +21,7 @@ public class SandStorageTestSuite {
 
         //When
         BigDecimal totalSand = BigDecimal.ZERO;
-        for(SandStorage continent : continents){
+        for (SandStorage continent : continents) {
             totalSand = totalSand.add(continent.getSandBeansQuantity());
         }
 

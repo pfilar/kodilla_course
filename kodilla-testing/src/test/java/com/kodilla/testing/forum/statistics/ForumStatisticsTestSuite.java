@@ -1,4 +1,5 @@
 package com.kodilla.testing.forum.statistics;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
@@ -156,7 +157,7 @@ public class ForumStatisticsTestSuite {
         when(statistics.postsCount()).thenReturn(1000);
         when(statistics.commentsCount()).thenReturn(5000);
         List<String> names = new ArrayList<>();             // stwoarzenie ArrayList do usersName
-        for(int i = 1; i <= 100; i++)
+        for (int i = 1; i <= 100; i++)
             names.add("name");
         when(statistics.usersNames()).thenReturn(names);
 
@@ -171,21 +172,6 @@ public class ForumStatisticsTestSuite {
         Assert.assertEquals(50, forumStatistics.getAvgCommentsPerUsers(), 0.001);
         Assert.assertEquals(5, forumStatistics.getAvgCommentsPerPosts(), 0.001);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     // public double avg () {

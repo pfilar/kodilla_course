@@ -73,7 +73,7 @@ public class Game {
     public Winner isWinner() {
         Winner winner = Winner.NONE;
         winner = checkHorizontal();
-        if(winner == NONE)
+        if (winner == NONE)
             winner = checkVertical();
         if (winner == NONE)
             winner = checkDiagonal();
@@ -83,7 +83,7 @@ public class Game {
     private Winner checkDiagonal() {
         Winner winner = NONE;
         winner = checkDiagonal(COMPUTER) ? COMPUTER : NONE;
-        if(winner == NONE)
+        if (winner == NONE)
             winner = checkDiagonal(HUMAN) ? HUMAN : NONE;
         return winner;
     }
@@ -97,7 +97,7 @@ public class Game {
     private Winner checkVertical() {
         Winner winner = Winner.NONE;
         for (int n = 0; n < 3; n++) {
-            if(checkColForWinner(n, COMPUTER))
+            if (checkColForWinner(n, COMPUTER))
                 winner = COMPUTER;
             else if (checkColForWinner(n, HUMAN))
                 winner = HUMAN;
@@ -113,7 +113,7 @@ public class Game {
     private Winner checkHorizontal() {
         Winner winner = Winner.NONE;
         for (int n = 0; n < 3; n++) {
-            if(checkRowForWinner(n, COMPUTER))
+            if (checkRowForWinner(n, COMPUTER))
                 winner = COMPUTER;
             else if (checkRowForWinner(n, HUMAN))
                 winner = HUMAN;

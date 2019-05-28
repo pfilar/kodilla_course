@@ -14,6 +14,7 @@ public final class Book {               // słowo kluczowe "final"
     public String getTitle() {
         return title;
     }
+
     public String getAuthor() {
         return author;
     }

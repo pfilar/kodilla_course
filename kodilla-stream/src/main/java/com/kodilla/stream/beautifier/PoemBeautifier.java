@@ -1,8 +1,9 @@
 package com.kodilla.stream.beautifier;
+
 import com.kodilla.stream.beautifier.PoemDecorator;
 
 public class PoemBeautifier {
-    public void beautify(String text, PoemDecorator poemDecorator){             // jako parametry będzie można przekazać tekst do upiększenia
+    public void beautify(String text, PoemDecorator poemDecorator) {             // jako parametry będzie można przekazać tekst do upiększenia
         //poemDecorator.decorate();
         String result = poemDecorator.decorate(text);
         System.out.println(result);

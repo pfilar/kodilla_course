@@ -1,4 +1,5 @@
 package com.kodilla.testing.forum;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -10,9 +11,9 @@ public class ForumUser {
     private LinkedList<ForumComment> comments = new LinkedList<ForumComment>();  //  tworzone od razu przez (operator new), nie potrzebny konstruktora
 
     public ForumUser(String name, String realName) {
-            //name visible on forum
+        //name visible on forum
         this.name = name;
-            //real name of the user
+        //real name of the user
         this.realName = realName;
     }
 
@@ -44,7 +45,7 @@ public class ForumUser {
 
     public ForumComment getComment(int commentNumber) {  // dodana
         ForumComment theComment = null;
-        if (commentNumber >= 0 && commentNumber < comments.size()){
+        if (commentNumber >= 0 && commentNumber < comments.size()) {
             theComment = comments.get(commentNumber);
         }
         return theComment;
@@ -52,7 +53,7 @@ public class ForumUser {
 
     public boolean removePost(ForumPost thePost) {
         boolean result = false;
-        if (posts.contains(thePost)){
+        if (posts.contains(thePost)) {
             posts.remove(thePost);
             result = true;
         }
@@ -61,7 +62,7 @@ public class ForumUser {
 
     public boolean removeComment(ForumComment theComment) {
         boolean result = false;
-        if (comments.contains(theComment)){
+        if (comments.contains(theComment)) {
             comments.remove(theComment);
             result = true;
         }

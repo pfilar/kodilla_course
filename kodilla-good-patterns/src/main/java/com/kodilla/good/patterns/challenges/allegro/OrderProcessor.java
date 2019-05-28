@@ -23,7 +23,7 @@ public class OrderProcessor {
                     productOrderRequest.getProduct(),
                     productOrderRequest.getQuantity());
 
-        }else{
+        } else {
             System.out.println("Order has been rejected.");
         }
 
