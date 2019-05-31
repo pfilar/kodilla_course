@@ -1,7 +1,5 @@
 package com.kodilla.patterns.builder.bigmac;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
-
 import java.util.ArrayList;
 import java.util.List;
 
