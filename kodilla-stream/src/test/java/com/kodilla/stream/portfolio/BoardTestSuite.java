@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
+import static java.time.temporal.ChronoUnit.DAYS;
 
 public class BoardTestSuite {
     public Board prepareTestData() {
@@ -146,16 +147,33 @@ public class BoardTestSuite {
         List<TaskList> inProgressTasks = new ArrayList<>();
         inProgressTasks.add(new TaskList("In progress"));
 
-        double averageOfDays = project.getTaskLists().stream()
-                .filter(inProgressTasks::contains)
-                .flatMap(n -> n.getTasks().stream())
-                .map(m -> (LocalDate.now().getDayOfYear() - m.getCreated().getDayOfYear()))
-                .mapToDouble(i -> i)
-                .average()
-                .getAsDouble();
+//        double averageOfDays = project.getTaskLists().stream()
+//                .filter(inProgressTasks::contains)
+//                .flatMap(n -> n.getTasks().stream())
+//                .map(m -> (LocalDate.now().getDayOfYear() - m.getCreated().getDayOfYear()))
+//                .mapToDouble(i -> i)
+//                .average()
+//                .getAsDouble();
+//
+//        //Then
+//        Assert.assertEquals(10.0, averageOfDays, 0.001);
 
-        //Then
-        Assert.assertEquals(10.0, averageOfDays, 0.001);
+        double inProgressAllTasksDaysQuantity = project.getTaskLists().stream()
+                .filter(inProgressTasks::contains)
+                .flatMap(taskList -> taskList.getTasks().stream())
+                .map(task -> task.getCreated())
+                .mapToLong(dateOfCreation -> DAYS.between(dateOfCreation, LocalDate.now()))
+                .reduce(0, (sum, current) -> sum = sum + current);
+
+        double inProgressQuantityOfTasks = project.getTaskLists().stream()
+                .filter(inProgressTasks::contains)
+                .flatMap(taskList -> taskList.getTasks().stream())
+                .count();
+
+        double result = inProgressAllTasksDaysQuantity / inProgressQuantityOfTasks;
+
+        //then
+        Assert.assertEquals(10, result, 0.001);
     }
 }
 
