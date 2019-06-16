@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.com.kodilla.stream.portfolio.BoardTestSuite" tests="4" skipped="0" failures="0"
-           errors="0" timestamp="2019-05-22T20:48:17" hostname="DESKTOP-6DHFJAR" time="0.016">
-    <properties/>
-    <testcase name="testAddTaskList" classname="com.kodilla.stream.com.kodilla.stream.portfolio.BoardTestSuite"
-              time="0.011"/>
-    <testcase name="testAddTaskListFindUsersTasks"
-              classname="com.kodilla.stream.com.kodilla.stream.portfolio.BoardTestSuite" time="0.001"/>
-    <testcase name="testAddTaskListFindLongTasks"
-              classname="com.kodilla.stream.com.kodilla.stream.portfolio.BoardTestSuite" time="0.004"/>
-    <testcase name="testAddTaskListFindOutdatedTasks"
-              classname="com.kodilla.stream.com.kodilla.stream.portfolio.BoardTestSuite" time="0.0"/>
-    <system-out><![CDATA[]]></system-out>
-    <system-err><![CDATA[]]></system-err>
+<testsuite name="com.kodilla.stream.com.kodilla.stream.portfolio.BoardTestSuite" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-06-14T17:12:22" hostname="DESKTOP-6DHFJAR" time="0.015">
+  <properties/>
+  <testcase name="testAddTaskList" classname="com.kodilla.stream.com.kodilla.stream.portfolio.BoardTestSuite" time="0.011"/>
+  <testcase name="testAddTaskListFindUsersTasks" classname="com.kodilla.stream.com.kodilla.stream.portfolio.BoardTestSuite" time="0.002"/>
+  <testcase name="testAddTaskListFindLongTasks" classname="com.kodilla.stream.com.kodilla.stream.portfolio.BoardTestSuite" time="0.001"/>
+  <testcase name="testAddTaskListFindOutdatedTasks" classname="com.kodilla.stream.com.kodilla.stream.portfolio.BoardTestSuite" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.library.BookDirectoryTestSuite" tests="6" skipped="0" failures="0" errors="0"
-           timestamp="2019-05-22T20:48:18" hostname="DESKTOP-6DHFJAR" time="0.012">
-    <properties/>
-    <testcase name="testListBooksWithConditionFragmentShorterThan3"
-              classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.009"/>
-    <testcase name="listBooksInHandsOfOneBooks" classname="com.kodilla.testing.library.BookDirectoryTestSuite"
-              time="0.0"/>
-    <testcase name="testListBooksWithConditionMoreThan20" classname="com.kodilla.testing.library.BookDirectoryTestSuite"
-              time="0.0"/>
-    <testcase name="testListBooksWithConditionsReturnList"
-              classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.0"/>
-    <testcase name="listBooksInHandsOfFiveBooks" classname="com.kodilla.testing.library.BookDirectoryTestSuite"
-              time="0.001"/>
-    <testcase name="listBooksInHandsOfZeroBooks" classname="com.kodilla.testing.library.BookDirectoryTestSuite"
-              time="0.0"/>
-    <system-out><![CDATA[]]></system-out>
-    <system-err><![CDATA[]]></system-err>
+<testsuite name="com.kodilla.testing.library.BookDirectoryTestSuite" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-06-14T17:12:22" hostname="DESKTOP-6DHFJAR" time="0.009">
+  <properties/>
+  <testcase name="testListBooksWithConditionFragmentShorterThan3" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.007"/>
+  <testcase name="listBooksInHandsOfOneBooks" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.001"/>
+  <testcase name="testListBooksWithConditionMoreThan20" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.0"/>
+  <testcase name="testListBooksWithConditionsReturnList" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.001"/>
+  <testcase name="listBooksInHandsOfFiveBooks" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.0"/>
+  <testcase name="listBooksInHandsOfZeroBooks" classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
