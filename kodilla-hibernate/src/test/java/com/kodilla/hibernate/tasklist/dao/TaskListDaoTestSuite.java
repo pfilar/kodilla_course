@@ -1,5 +1,8 @@
 package com.kodilla.hibernate.tasklist.dao;
 
+import com.kodilla.hibernate.task.Task;
+import com.kodilla.hibernate.task.TaskFinancialDetails;
+import com.kodilla.hibernate.task.dao.TaskDao;
 import com.kodilla.hibernate.tasklist.TaskList;
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,15 +12,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.transaction.Transactional;
+import java.math.BigDecimal;
 import java.util.List;
 
-@Transactional          // jak clean tylko nie trzeba dodawać kodu / wazne w ten sposob dziala tylko w testach w kodzie inaczej
+//@Transactional          // jak clean tylko nie trzeba dodawać kodu / wazne w ten sposob dziala tylko w testach w kodzie inaczej
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class TaskListDaoTestSuite {
     @Autowired
     private TaskListDao taskListDao;
-
 
     @Test
     public void testFindByListName() {
@@ -29,10 +32,36 @@ public class TaskListDaoTestSuite {
         List<TaskList> result = taskListDao.findByListName("list1");
 
         //Then
-        Assert.assertEquals(1, result.size());
+        //taskListDao.deleteById(taskList.getId());
+        Assert.assertEquals(12, result.size());
 
-
+        //CleanUp
+        taskListDao.deleteById(taskList.getId());
     }
 
+    @Test
+    public void testTaskListDaoSaveWithTasks() {
+        //Given
+        Task task = new Task("Test: Learn Hibernate", 14);
+        Task task2 = new Task("Test: Write some entities", 3);
+        TaskFinancialDetails tfd = new TaskFinancialDetails(new BigDecimal(20), false);
+        TaskFinancialDetails tfd2 = new TaskFinancialDetails(new BigDecimal(10), false);
+        task.setTaskFinancialDetails(tfd);
+        task2.setTaskFinancialDetails(tfd2);
+        TaskList taskList = new TaskList("LISTNAME", "ToDo tasks");
+        taskList.getTasks().add(task);
+        taskList.getTasks().add(task2);
+        task.setTaskList(taskList);
+        task2.setTaskList(taskList);
 
+        //When
+        taskListDao.save(taskList);
+        int id = taskList.getId();
+
+        //Then
+        Assert.assertNotEquals(0, id);
+
+        //CleanUp
+        taskListDao.deleteById(id);
+    }
 }

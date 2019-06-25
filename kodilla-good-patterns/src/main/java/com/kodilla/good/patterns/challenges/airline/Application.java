@@ -8,7 +8,7 @@ public class Application {
         flightSerwis.findDepartureAirport("Warszawa");
         System.out.println();
         System.out.println("Find arrival airport for direct flight");
-        flightSerwis.findArrivalAirport("Gdańsk");
+        flightSerwis.findArrivalAirport("Gdansk");
         System.out.println();
         System.out.println("Find stopover airport for connecting flight");
         flightSerwis.findStopoverAirport("Warszawa");

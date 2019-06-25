@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-06-14T17:12:22" hostname="DESKTOP-6DHFJAR" time="0.069">
+<testsuite name="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-06-25T17:11:39" hostname="DESKTOP-6DHFJAR" time="0.101">
   <properties/>
-  <testcase name="testCalculateAdvStatisticsWithMockPosts0" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.067"/>
+  <testcase name="testCalculateAdvStatisticsWithMockPosts0" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.099"/>
   <testcase name="testCalculateAdvStatisticsWithMockUsers0" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
   <testcase name="testCalculateAdvStatisticsWithMockLessCommentsThenPosts" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
-  <testcase name="testCalculateAdvStatisticsWithMockPosts1000" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatisticsWithMockPosts1000" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.001"/>
   <testcase name="testCalculateAdvStatisticsWithMockUsers100" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
   <testcase name="testCalculateAdvStatisticsWithMockComments0" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
-  <testcase name="testCalculateAdvStatisticsWithMockMoreCommentsThenPosts" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatisticsWithMockMoreCommentsThenPosts" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

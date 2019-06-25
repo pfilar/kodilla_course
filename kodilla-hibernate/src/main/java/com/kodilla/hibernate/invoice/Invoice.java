@@ -11,15 +11,13 @@ public class Invoice {
 
     private int id;
     private String number;
-    private List<Item> items;
+    private List<Item> items = new ArrayList<>();
+
+    public Invoice() {
+    }
 
     public Invoice(String number) {
         this.number = number;
-        items = new ArrayList<>();
-    }
-
-    public Invoice() {
-        items = new ArrayList<>();
     }
 
     @Id
@@ -37,10 +35,10 @@ public class Invoice {
     }
 
     @OneToMany(
-            cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY,
             targetEntity = Item.class,
-            mappedBy = "invoice"
+            mappedBy = "invoice",
+            cascade = CascadeType.ALL,
+            fetch = FetchType.LAZY
     )
     public List<Item> getItems() {
         return items;
