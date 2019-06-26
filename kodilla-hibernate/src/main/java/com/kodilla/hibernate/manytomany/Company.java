@@ -5,6 +5,22 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedNativeQueries(value = {
+        @NamedNativeQuery(
+                name = "Company.retrieveCompaniesStartingWith",
+                query = "SELECT * FROM COMPANIES " +
+                        "WHERE SUBSTR(COMPANY_NAME,1,3) = :PARAMETER",
+                resultClass = Company.class
+        ),
+
+        @NamedNativeQuery(
+                name = "Company.retrieveCompaniesWithStringInside",
+                query = "SELECT * FROM COMPANIES " +
+                        "WHERE COMPANY_NAME LIKE CONCAT('%',:STRINGINSIDE,'%')",
+                resultClass = Company.class
+        )
+})
+
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
