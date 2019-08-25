@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.singleton.LoggerTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-25T17:09:47" hostname="DESKTOP-6DHFJAR" time="0.0">
+<testsuite name="com.kodilla.patterns.singleton.LoggerTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-25T17:54:42" hostname="DESKTOP-6DHFJAR" time="0.0">
   <properties/>
   <testcase name="testGetLastLog" classname="com.kodilla.patterns.singleton.LoggerTestSuite" time="0.0"/>
   <system-out><![CDATA[Log: [Log from our program]

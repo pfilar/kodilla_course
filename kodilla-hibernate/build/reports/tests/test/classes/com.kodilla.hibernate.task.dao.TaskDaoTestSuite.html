@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.047s</div>
+<div class="counter">0.055s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">testTaskDaoFindByDuration</td>
-<td class="success">0.022s</td>
+<td class="success">0.027s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testTaskDaoSave</td>
-<td class="success">0.012s</td>
+<td class="success">0.013s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testTaskDaoSaveWithFinancialDetails</td>
-<td class="success">0.013s</td>
+<td class="success">0.015s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,18 +97,16 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2019-06-26 16:33:40.780  INFO 10632 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite], using SpringBootContextLoader
-2019-06-26 16:33:40.780  INFO 10632 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite]: no resource found for suffixes {-context.xml, Context.groovy}.
-2019-06-26 16:33:40.780  INFO 10632 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite]: TaskDaoTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2019-06-26 16:33:40.780  INFO 10632 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.hibernate.KodillaHibernateApplication for test class com.kodilla.hibernate.task.dao.TaskDaoTestSuite
-2019-06-26 16:33:40.780  INFO 10632 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2019-06-26 16:33:40.780  INFO 10632 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@330a2d6b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@78e5a873, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7fb99537, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25165849, org.springframework.test.context.transaction.TransactionalTestExecutionListener@479558f5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1266c644, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2145f912, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@36863963, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5b399db6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7f493473, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@71cacfe1]
+<pre>2019-08-25 19:54:40.234  INFO 3472 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite], using SpringBootContextLoader
+2019-08-25 19:54:40.235  INFO 3472 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-08-25 19:54:40.235  INFO 3472 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.hibernate.task.dao.TaskDaoTestSuite]: TaskDaoTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-08-25 19:54:40.239  INFO 3472 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.hibernate.KodillaHibernateApplication for test class com.kodilla.hibernate.task.dao.TaskDaoTestSuite
+2019-08-25 19:54:40.241  INFO 3472 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-08-25 19:54:40.241  INFO 3472 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34795a4a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@22b11e40, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@22a6bf3a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e69cc71, org.springframework.test.context.transaction.TransactionalTestExecutionListener@50bc78fc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ad53fb5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6d1d10ba, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@df7532c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3ebfa1f6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6dc40903, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@68d94cc1]
 Hibernate: select next_val as id_val from hibernate_sequence for update
 Hibernate: update hibernate_sequence set next_val= ? where next_val=?
 Hibernate: insert into task (created, description, duration, tasks_financials_id, tasklist_id, id) values (?, ?, ?, ?, ?, ?)
 Hibernate: select task0_.id as id1_6_, task0_.created as created2_6_, task0_.description as descript3_6_, task0_.duration as duration4_6_, task0_.tasks_financials_id as tasks_fi5_6_, task0_.tasklist_id as tasklist6_6_ from task task0_ where task0_.duration=?
-Hibernate: select taskfinanc0_.id as id1_8_0_, taskfinanc0_.paid as paid2_8_0_, taskfinanc0_.price as price3_8_0_ from tasks_financials taskfinanc0_ where taskfinanc0_.id=?
-Hibernate: select tasklist0_.id as id1_7_0_, tasklist0_.description as descript2_7_0_, tasklist0_.listname as listname3_7_0_ from tasklist tasklist0_ where tasklist0_.id=?
 Hibernate: select task0_.id as id1_6_0_, task0_.created as created2_6_0_, task0_.description as descript3_6_0_, task0_.duration as duration4_6_0_, task0_.tasks_financials_id as tasks_fi5_6_0_, task0_.tasklist_id as tasklist6_6_0_, taskfinanc1_.id as id1_8_1_, taskfinanc1_.paid as paid2_8_1_, taskfinanc1_.price as price3_8_1_, tasklist2_.id as id1_7_2_, tasklist2_.description as descript2_7_2_, tasklist2_.listname as listname3_7_2_ from task task0_ left outer join tasks_financials taskfinanc1_ on task0_.tasks_financials_id=taskfinanc1_.id left outer join tasklist tasklist2_ on task0_.tasklist_id=tasklist2_.id where task0_.id=?
 Hibernate: delete from task where id=?
 Hibernate: select next_val as id_val from hibernate_sequence for update
@@ -137,7 +135,7 @@ Hibernate: delete from tasks_financials where id=?
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.4.1</a> at 2019-06-26 16:33:40</p>
+<a href="http://www.gradle.org">Gradle 5.4.1</a> at 2019-08-25 19:54:40</p>
 </div>
 </div>
 </body>

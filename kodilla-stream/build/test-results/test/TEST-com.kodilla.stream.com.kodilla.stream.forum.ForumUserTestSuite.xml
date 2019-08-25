@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.com.kodilla.stream.forum.ForumUserTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-06-25T17:11:38" hostname="DESKTOP-6DHFJAR" time="0.004">
+<testsuite name="com.kodilla.stream.com.kodilla.stream.forum.ForumUserTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-08-25T17:54:50" hostname="DESKTOP-6DHFJAR" time="0.004">
   <properties/>
   <testcase name="testGetLocationsOfFriends" classname="com.kodilla.stream.com.kodilla.stream.forum.ForumUserTestSuite" time="0.003"/>
   <testcase name="testGetLocationsOfFriendsOfFriends" classname="com.kodilla.stream.com.kodilla.stream.forum.ForumUserTestSuite" time="0.001"/>

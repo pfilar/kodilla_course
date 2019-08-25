@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.array.ArrayOperationsTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-25T17:11:38" hostname="DESKTOP-6DHFJAR" time="0.007">
+<testsuite name="com.kodilla.stream.array.ArrayOperationsTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-25T17:54:50" hostname="DESKTOP-6DHFJAR" time="0.007">
   <properties/>
   <testcase name="testGetAverage" classname="com.kodilla.stream.array.ArrayOperationsTestSuite" time="0.007"/>
   <system-out><![CDATA[1
