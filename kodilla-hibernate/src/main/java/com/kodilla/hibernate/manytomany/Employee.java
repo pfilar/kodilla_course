@@ -12,7 +12,7 @@ import java.util.List;
         ),
 
         @NamedQuery(
-                name = "Employee.retrieveEmployeesWithStringInside",
+                name = "Employee.retrieveEmployeesContainString",
                 query = "FROM Employee WHERE firstname LIKE CONCAT('%',:STRINGINSIDE,'%')"
         )
 })
