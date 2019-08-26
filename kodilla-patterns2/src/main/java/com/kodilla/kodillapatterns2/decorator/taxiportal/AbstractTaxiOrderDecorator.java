@@ -2,7 +2,7 @@ package com.kodilla.kodillapatterns2.decorator.taxiportal;
 
 import java.math.BigDecimal;
 
-public abstract class AbstractTaxiOrderDecorator implements TaxiOrder{
+public abstract class AbstractTaxiOrderDecorator implements TaxiOrder {
 
     private final TaxiOrder taxiOrder;
 
