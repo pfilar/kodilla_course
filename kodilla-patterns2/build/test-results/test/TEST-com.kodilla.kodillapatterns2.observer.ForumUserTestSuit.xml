@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.kodillapatterns2.observer.ForumUserTestSuit" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-30T09:55:55" hostname="DESKTOP-6DHFJAR" time="0.001">
+  <properties/>
+  <testcase name="testUpdate" classname="com.kodilla.kodillapatterns2.observer.ForumUserTestSuit" time="0.001"/>
+  <system-out><![CDATA[John Smith: New messages in topic Java Help Group
+ (total: 1 messages)
+Jessie Pinkman: New messages in topic Java Help Group
+ (total: 1 messages)
+John Smith: New messages in topic Java Help Group
+ (total: 2 messages)
+Jessie Pinkman: New messages in topic Java Help Group
+ (total: 2 messages)
+John Smith: New messages in topic Java Help Group
+ (total: 3 messages)
+Jessie Pinkman: New messages in topic Java Help Group
+ (total: 3 messages)
+Ivone Escobar: New messages in topic Java Tools Group
+ (total: 1 messages)
+Jessie Pinkman: New messages in topic Java Tools Group
+ (total: 1 messages)
+Ivone Escobar: New messages in topic Java Tools Group
+ (total: 2 messages)
+Jessie Pinkman: New messages in topic Java Tools Group
+ (total: 2 messages)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
