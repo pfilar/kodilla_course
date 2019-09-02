@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.kodillapatterns2.observer.homework.BootcampMentorsTestSuit" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-02T11:24:02" hostname="DESKTOP-6DHFJAR" time="0.001">
+  <properties/>
+  <testcase name="TaskQueueUpdate" classname="com.kodilla.kodillapatterns2.observer.homework.BootcampMentorsTestSuit" time="0.001"/>
+  <system-out><![CDATA[John Smith: new task Bootcamp First Edition 2019
+tasks quantity: 1 tasks
+John Smith: new task Bootcamp First Edition 2019
+tasks quantity: 1 tasks
+John Smith: new task Bootcamp First Edition 2019
+tasks quantity: 1 tasks
+Ivone Escobar: new task Bootcamp First Edition 2019
+tasks quantity: 1 tasks
+Ivone Escobar: new task Bootcamp First Edition 2019
+tasks quantity: 1 tasks
+John Smith: new task Bootcamp Second Edition 2019
+tasks quantity: 1 tasks
+John Smith: new task Bootcamp Second Edition 2019
+tasks quantity: 2 tasks
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
