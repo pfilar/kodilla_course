@@ -7,7 +7,6 @@ import java.util.Map;
 
 public class TaskQueue implements ObsetvableTask {
     private final List<ObserverTask> mentors;
-    //private final List<String> tasksMap;
     private final Map<String, String> tasksMap;
     private final String nameOfTask;
 
@@ -37,6 +36,10 @@ public class TaskQueue implements ObsetvableTask {
     @Override
     public void removeObserver(ObserverTask observerTask) {
         mentors.remove(observerTask);
+    }
+
+    public List<ObserverTask> getMentors() {
+        return mentors;
     }
 
     public Map<String, String> getTasksMap() {

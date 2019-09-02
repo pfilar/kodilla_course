@@ -4,33 +4,49 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class BootcampMentorsTestSuit {
-
     @Test
     public void TaskQueueUpdate() {
         //Given
-        TaskQueue arthurWhit = new BootcampFirstEdition();
-        TaskQueue maxBlack = new BootcampFirstEdition();
-        TaskQueue nicolleteRed = new BootcampSecondEdition();
+        TaskQueue studentArthurWhit = new BootcampFirstEdition();
+        TaskQueue studentMaxBlack = new BootcampFirstEdition();
+        TaskQueue studentNicolleteRed = new BootcampSecondEdition();
         BootcampMentors johnSmith = new BootcampMentors("John Smith");
         BootcampMentors ivoneEscobar = new BootcampMentors("Ivone Escobar");
 
-        arthurWhit.registerObserver(johnSmith);
-        maxBlack.registerObserver(ivoneEscobar);
-        nicolleteRed.registerObserver(johnSmith);
+        studentArthurWhit.registerObserver(johnSmith);
+        studentMaxBlack.registerObserver(ivoneEscobar);
+        studentNicolleteRed.registerObserver(johnSmith);
 
         //When
-        arthurWhit.addTask("Module 10", "Task 1");
-        arthurWhit.addTask("Module 10", "Task 2");
-        arthurWhit.addTask("Module 10", "Task 3");
+        studentArthurWhit.addTask("Module 10", "Task 1");
+        studentArthurWhit.addTask("Module 10", "Task 2");
+        studentArthurWhit.addTask("Module 10", "Task 3");
 
-        maxBlack.addTask("Module 10", "Task 1");
-        maxBlack.addTask("Module 10", "Task 2");
+        studentMaxBlack.addTask("Module 10", "Task 1");
+        studentMaxBlack.addTask("Module 10", "Task 2");
 
-        nicolleteRed.addTask("Module 1", "Task 5");
-        nicolleteRed.addTask("Module 2", "Task 1");
+        studentNicolleteRed.addTask("Module 1", "Task 5");
+        studentNicolleteRed.addTask("Module 2", "Task 1");
 
         //Then
         assertEquals(5, johnSmith.getUpdateCount());
         assertEquals(2, ivoneEscobar.getUpdateCount());
+    }
+
+    @Test
+    public void removeObserverTest() {
+        //Given
+        TaskQueue studentArthurWhit = new BootcampFirstEdition();
+        BootcampMentors johnSmith = new BootcampMentors("John Smith");
+        BootcampMentors ivoneEscobar = new BootcampMentors("Ivone Escobar");
+
+        studentArthurWhit.registerObserver(johnSmith);
+        studentArthurWhit.registerObserver(ivoneEscobar);
+
+        //When
+        studentArthurWhit.removeObserver(johnSmith);
+
+        //Then
+        assertEquals(1, studentArthurWhit.getMentors().size());
     }
 }
