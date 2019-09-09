@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.kodillapatterns2.adapter.company.SalaryAdapterTestSuit" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-05T09:37:40" hostname="DESKTOP-6DHFJAR" time="0.003">
+<testsuite name="com.kodilla.kodillapatterns2.adapter.company.SalaryAdapterTestSuit" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-09T17:05:01" hostname="DESKTOP-6DHFJAR" time="0.003">
   <properties/>
   <testcase name="testTotalSalary" classname="com.kodilla.kodillapatterns2.adapter.company.SalaryAdapterTestSuit" time="0.003"/>
   <system-out><![CDATA[Employee{peselId='67032906720', firstname='John', lastname='Smith', baseSalary=4500}

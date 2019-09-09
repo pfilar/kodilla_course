@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-09-05T09:37:41" hostname="DESKTOP-6DHFJAR" time="0.004">
+<testsuite name="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-09-09T17:05:02" hostname="DESKTOP-6DHFJAR" time="0.003">
   <properties/>
-  <testcase name="testVipTaxiWithChildSeatExpressGetCost" classname="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" time="0.002"/>
+  <testcase name="testVipTaxiWithChildSeatExpressGetCost" classname="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" time="0.001"/>
   <testcase name="testUberWithTwoChildSeatDescription" classname="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" time="0.0"/>
   <testcase name="testUberWithTwoChildSeatCost" classname="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" time="0.0"/>
   <testcase name="testUberNetworkGetCost" classname="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" time="0.0"/>
-  <testcase name="testMyTaxiWithChildSeatGetCost" classname="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" time="0.001"/>
+  <testcase name="testMyTaxiWithChildSeatGetCost" classname="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" time="0.0"/>
   <testcase name="testBasicTaxiOrderGetCost" classname="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" time="0.0"/>
   <testcase name="testUberNetworkGetDescription" classname="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" time="0.0"/>
   <testcase name="testMyTaxiWithChildSeatGetDescription" classname="com.kodilla.kodillapatterns2.decorator.taxiportal.TaxiOrderTestSuit" time="0.0"/>

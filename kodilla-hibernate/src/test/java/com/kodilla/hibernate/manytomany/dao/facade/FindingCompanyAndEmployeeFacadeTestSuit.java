@@ -46,21 +46,16 @@ public class FindingCompanyAndEmployeeFacadeTestSuit {
         //When
         List<Company> companies = findingFacade.findCompanyByPartOfName("Kod");
 
+
         //Then
-        Assert.assertEquals(22, companies.size());
+        Assert.assertEquals(2, companies.size());
 
         //CleanUp
-        companyDao.delete(asseco);   // companyDao.deleteAll()
+        companyDao.delete(asseco);   // companyDao.deleteAll();
         companyDao.delete(atos);
         companyDao.delete(kodilla);
         companyDao.delete(codecademy);
         companyDao.delete(kodlab);
-
-//        try {
-//            companyDao.deleteAll();
-//        } catch (Exception e) {
-//            //do nothing
-//        }
     }
 
     @Test
@@ -82,7 +77,7 @@ public class FindingCompanyAndEmployeeFacadeTestSuit {
         List<Employee> employees = findingFacade.findEmployeeByPartOfName("Bla");
 
         //Then
-        Assert.assertEquals(16, employees.size());
+        Assert.assertEquals(2, employees.size());
 
         //CleanUp
         employeeDao.delete(one);
@@ -90,11 +85,5 @@ public class FindingCompanyAndEmployeeFacadeTestSuit {
         employeeDao.delete(three);
         employeeDao.delete(four);
         employeeDao.delete(five);
-
-//        try {
-//            employeeDao.deleteAll();
-//        } catch (Exception e) {
-//            //do nothing
-//        }
     }
 }

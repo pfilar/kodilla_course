@@ -107,8 +107,8 @@ public class CompanyDaoTestSuite {
         List<Company> findCompaniesStartingWith = companyDao.retrieveCompaniesStartingWith("Dat");
 
         //Then
-        Assert.assertEquals(9, findByLastname.size());
-        Assert.assertEquals(9, findCompaniesStartingWith.size());
+        Assert.assertEquals(6, findByLastname.size());
+        Assert.assertEquals(6, findCompaniesStartingWith.size());
 
         //CleanUp
         try {
