@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-08-25T17:54:51" hostname="DESKTOP-6DHFJAR" time="0.068">
+<testsuite name="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-09-24T10:55:45" hostname="DESKTOP-6DHFJAR" time="0.083">
   <properties/>
-  <testcase name="testCalculateAdvStatisticsWithMockPosts0" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.066"/>
+  <testcase name="testCalculateAdvStatisticsWithMockPosts0" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.081"/>
   <testcase name="testCalculateAdvStatisticsWithMockUsers0" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
   <testcase name="testCalculateAdvStatisticsWithMockLessCommentsThenPosts" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
-  <testcase name="testCalculateAdvStatisticsWithMockPosts1000" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.001"/>
-  <testcase name="testCalculateAdvStatisticsWithMockUsers100" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
-  <testcase name="testCalculateAdvStatisticsWithMockComments0" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsWithMockPosts1000" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatisticsWithMockUsers100" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsWithMockComments0" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
   <testcase name="testCalculateAdvStatisticsWithMockMoreCommentsThenPosts" classname="com.kodilla.testing.forum.statistics.ForumStatisticsTestSuite" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
